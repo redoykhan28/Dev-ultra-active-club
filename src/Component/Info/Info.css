@@ -1,0 +1,22 @@
+.identy {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.identy img {
+
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 1px;
+    margin-right: 5px;
+}
+
+.measure {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}

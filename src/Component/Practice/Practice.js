@@ -8,7 +8,7 @@ const Practice = (props) => {
         <div className='card'>
             <img src={img} alt="img" />
             <h4 style={{ marginLeft: '10px' }}>{name}</h4>
-            <p style={{ marginLeft: '10px' }}>{desc.slice(0, 90)}</p>
+            <p style={{ marginLeft: '10px' }}>{desc.slice(0, 70)}...</p>
             <h5 style={{ marginLeft: '10px' }}>Time: {time} Minutes</h5>
             <button className='btn'>Add to list</button>
         </div>

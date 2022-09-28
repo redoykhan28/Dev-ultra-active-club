@@ -20,3 +20,20 @@
     justify-content: space-around;
     margin-top: 40px;
 }
+
+@media screen and (max-width:576px) {
+
+    .identy {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .measure {
+
+        margin-top: 40px;
+        text-align: center;
+        margin-left: 10px;
+    }
+}

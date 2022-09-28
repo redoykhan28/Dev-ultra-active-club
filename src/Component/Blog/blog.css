@@ -8,3 +8,14 @@
 
     margin-top: 45px;
 }
+
+@media screen and (max-width:576px) {
+
+    .blog {
+
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+}

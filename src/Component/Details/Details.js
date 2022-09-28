@@ -27,9 +27,9 @@ const Details = (props) => {
                     <button className='btn2' onClick={() => setBreakTime(40)}>40m</button>
                 </div>
             </div>
-            <h3 style={{ marginTop: '50px' }}>Practice Details</h3>
-            <h4 style={{ marginLeft: '15px' }}>practice time: <span style={{ color: "#7D93A1" }}>{time} Minutes</span></h4>
-            <h4 style={{ marginLeft: '15px' }}>Break time: <span style={{ color: "#7D93A1" }}>{breakTime} Minutes</span></h4>
+            <h3 className='practice-details' style={{ marginTop: '50px' }}>Practice Details</h3>
+            <h4 className='practice-time:' style={{ marginLeft: '15px' }}>practice time: <span style={{ color: "#7D93A1" }}>{time} Minutes</span></h4>
+            <h4 className='break-time:' style={{ marginLeft: '15px' }}>Break time: <span style={{ color: "#7D93A1" }}>{breakTime} Minutes</span></h4>
 
             <button className='activity-btn'>Activity Complete</button>
 

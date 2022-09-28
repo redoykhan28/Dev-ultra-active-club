@@ -19,3 +19,45 @@
     padding: 10px;
 
 }
+
+@media screen and (max-width:576px) {
+
+    .main-container {
+
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .practice-container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .details-container {
+
+        padding: 0px;
+
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .main-container {
+
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .practice-container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}

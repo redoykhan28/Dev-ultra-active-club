@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Details from '../Details/Details';
 import Info from '../Info/Info';
 import Practice from '../Practice/Practice';
 import './Practices.css'
@@ -13,6 +14,18 @@ const Practices = () => {
             .then(data => setPractice(data))
     }, [])
 
+    //setup state for practice time
+    const [practiceTime, setPracticeTime] = useState([])
+
+    //handler button for list
+    const addList = (practice) => {
+
+        // console.log(practice)
+
+        let newTime = [...practiceTime, practice];
+        setPracticeTime(newTime)
+    }
+
     return (
         <div className='main-container'>
 
@@ -24,7 +37,8 @@ const Practices = () => {
                     {
                         Practices.map(practice => <Practice
                             key={practice.id}
-                            practice={practice}>
+                            practice={practice}
+                            addToListHandler={addList}>
                         </Practice>)
                     }
                 </div>
@@ -35,6 +49,7 @@ const Practices = () => {
 
             <div className='details-container'>
                 <Info></Info>
+                <Details practiceTime={practiceTime}></Details>
             </div>
 
         </div>

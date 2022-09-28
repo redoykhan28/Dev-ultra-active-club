@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Details.css'
 
 const Details = (props) => {
+
+    //set state for break
+    const [breakTime, setBreakTime] = useState(0)
 
     const { practiceTime } = props
     console.log(props)
@@ -15,8 +18,21 @@ const Details = (props) => {
 
     return (
         <div className='details'>
-            <h3>Practice Details</h3>
+            <div className='break'>
+                <h3>Add a Break</h3>
+                <div className='btn-card'>
+                    <button className='btn2' onClick={() => setBreakTime(10)}>10m</button>
+                    <button className='btn2' onClick={() => setBreakTime(20)} >20m</button>
+                    <button className='btn2' onClick={() => setBreakTime(30)}>30m</button>
+                    <button className='btn2' onClick={() => setBreakTime(40)}>40m</button>
+                </div>
+            </div>
+            <h3 style={{ marginTop: '50px' }}>Practice Details</h3>
             <h4 style={{ marginLeft: '15px' }}>practice time: <span style={{ color: "#7D93A1" }}>{time} Minutes</span></h4>
+            <h4 style={{ marginLeft: '15px' }}>Break time: <span style={{ color: "#7D93A1" }}>{breakTime} Minutes</span></h4>
+
+            <button className='activity-btn'>Activity Complete</button>
+
         </div>
     );
 };

@@ -26,6 +26,7 @@ const Practices = () => {
         setPracticeTime(newTime)
     }
 
+
     return (
         <div className='main-container'>
 

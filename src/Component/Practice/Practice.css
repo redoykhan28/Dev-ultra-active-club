@@ -1,0 +1,33 @@
+.card {
+
+    width: 21rem;
+    padding: 15px;
+    margin: 20px;
+    background-color: #e5e4e6;
+    border-radius: 25px;
+}
+
+.card img {
+
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    border-radius: 25px;
+}
+
+.btn {
+
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+.btn:hover {
+
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}

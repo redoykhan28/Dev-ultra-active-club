@@ -1,42 +1,42 @@
 [
     {
         "id": 1,
-        "img": "image1.png",
+        "img": "https://footballtechniques.co/wp-content/uploads/2020/02/shooting-drill.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-1",
         "name": "Shooting",
         "desc": "Every time you’re on the training pitch, think about the following characteristics of shooting technique. If you can master them all, you’ll find that your ability increases exponentially over time.",
         "time": 20
     },
     {
         "id": 2,
-        "img": "image.png",
+        "img": "https://www.ertheo.com/blog/wp-content/uploads/2018/10/Soccer-passing-drills-and-soccer-dribbling-drills.jpg",
         "name": "Passing",
         "desc": "Passing the ball is one of the main skills in soccer.[1] There are a few different types of passes that can help get you out of tricky situations. Grab a friend and start by learning the push pass. Then you can work your way up to the harder moves like the lofted, chipped, and one-two passes.",
         "time": 20
     },
     {
         "id": 3,
-        "img": "<ReferenceError: image is not defined>",
+        "img": "https://miro.medium.com/max/1400/0*imZKyHtT59KOUKDF",
         "name": "Dribbling.",
         "desc": "The best players in the world tend to use dribbling for three basic purposes: to beat or eliminate defenders by running past them with the ball, to create new passing lanes and angles, and to maintain possession and control of the ball.",
         "time": 20
     },
     {
         "id": 4,
-        "img": "image.png",
+        "img": "https://cdn.pixabay.com/photo/2018/03/06/18/39/ball-3204197__340.jpg",
         "name": "Free kick",
         "desc": "Pick your spot and visualize. After you place the ball on the ground, look at the goal and pick the exact spot where you are going to shoot. ...",
         "time": 20
     },
     {
         "id": 5,
-        "img": "<ReferenceError: image is not defined>",
+        "img": "https://editorial.uefa.com/resources/025e-0fb60fba795a-1979552bb83b-1000/the_guidelines_aim_to_limit_the_header_burden_in_youth_football.jpeg",
         "name": "Heading",
         "desc": "Heading is a fundamental technical aspect of football where the player makes contact with the ball using his/her forehead. Headers are used to defend and attack while the ball is in the air. The aim of a good header is to either score a goal, maintain/regain possession of the ball, or eliminate a goalscoring threat.",
         "time": 20
     },
     {
         "id": 6,
-        "img": "<ReferenceError: image is not defined>",
+        "img": "https://st3.depositphotos.com/1017986/14674/i/600/depositphotos_146746153-stock-photo-soccer-player-playing-with-ball.jpg",
         "name": "Running with ball",
         "desc": "Soccer Training Drills that help players to understand and practice in game related situations the technique and skill of running with the ball, are really important to help players develop and improve this vital skill that can really carry attacks quickly and effectively to the opposition.",
         "time": 20

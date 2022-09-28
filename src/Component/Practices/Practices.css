@@ -1,0 +1,13 @@
+.main-container {
+    margin-top: 60px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+
+}
+
+.practice-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

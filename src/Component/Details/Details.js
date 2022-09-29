@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { addDb } from '../../Utilities/StorageDb';
 import './Details.css'
 
 const Details = (props) => {
@@ -6,8 +7,16 @@ const Details = (props) => {
     //set state for break
     const [breakTime, setBreakTime] = useState(0)
 
+    useEffect(() => {
+
+        let store = localStorage.getItem('break-time')
+        let storeParse = JSON.parse(store);
+        console.log(storeParse)
+
+    }, [breakTime])
+
     const { practiceTime } = props
-    console.log(props)
+    console.log(props.practice)
 
     let time = 0
     for (const minute of practiceTime) {
@@ -16,15 +25,25 @@ const Details = (props) => {
 
     }
 
+    const handlebtn = (id) => {
+
+        setBreakTime(id);
+
+        addDb(id);
+
+    }
+
+
+
     return (
         <div className='details'>
             <div className='break'>
                 <h3>Add a Break</h3>
                 <div className='btn-card'>
-                    <button className='btn2' onClick={() => setBreakTime(10)}>10m</button>
-                    <button className='btn2' onClick={() => setBreakTime(20)} >20m</button>
-                    <button className='btn2' onClick={() => setBreakTime(30)}>30m</button>
-                    <button className='btn2' onClick={() => setBreakTime(40)}>40m</button>
+                    <button className='btn2' onClick={() => handlebtn(10)}>10m</button>
+                    <button className='btn2' onClick={() => handlebtn(20)} >20m</button>
+                    <button className='btn2' onClick={() => handlebtn(30)}>30m</button>
+                    <button className='btn2' onClick={() => handlebtn(40)}>40m</button>
                 </div>
             </div>
             <h3 className='practice-details' style={{ marginTop: '50px' }}>Practice Details</h3>

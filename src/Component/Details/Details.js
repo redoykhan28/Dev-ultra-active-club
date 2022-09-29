@@ -11,7 +11,7 @@ const Details = (props) => {
     useEffect(() => {
 
         let getBreak = getDb();
-
+        console.log(getBreak)
         for (const id in getBreak) {
 
             setBreakTime(getBreak[id])

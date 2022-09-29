@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { addDb, getDb } from '../../Utilities/StorageDb';
 import './Details.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Details = (props) => {
 
@@ -37,6 +39,13 @@ const Details = (props) => {
 
     }
 
+    //get toast
+    const getToast = () => {
+
+        toast("Congrats! Your activity is completed");
+
+    }
+
 
 
     return (
@@ -54,7 +63,17 @@ const Details = (props) => {
             <h4 className='practice-time:' style={{ marginLeft: '15px' }}>practice time: <span style={{ color: "#7D93A1" }}>{time} Minutes</span></h4>
             <h4 className='break-time:' style={{ marginLeft: '15px' }}>Break time: <span style={{ color: "#7D93A1" }}>{breakTime} Minutes</span></h4>
 
-            <button className='activity-btn'>Activity Complete</button>
+            <button className='activity-btn' onClick={getToast}>Activity Complete</button>
+
+            <ToastContainer position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover />
 
         </div>
     );

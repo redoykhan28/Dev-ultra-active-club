@@ -13,7 +13,7 @@ const Details = (props) => {
     useEffect(() => {
 
         let getBreak = getDb();
-        console.log(getBreak)
+        // console.log(getBreak)
         for (const id in getBreak) {
 
             setBreakTime(getBreak[id])
@@ -59,9 +59,12 @@ const Details = (props) => {
                     <button className='btn2' onClick={() => handlebtn(40)}>40m</button>
                 </div>
             </div>
-            <h3 className='practice-details' style={{ marginTop: '50px' }}>Practice Details</h3>
-            <h4 className='practice-time:' style={{ marginLeft: '15px' }}>practice time: <span style={{ color: "#7D93A1" }}>{time} Minutes</span></h4>
-            <h4 className='break-time:' style={{ marginLeft: '15px' }}>Break time: <span style={{ color: "#7D93A1" }}>{breakTime} Minutes</span></h4>
+
+            <div className='pr-details'>
+                <h3 className='practice-details'>Practice Details</h3>
+                <h4 className='practice-time:' style={{ marginLeft: '15px' }}>practice time: <span style={{ color: "#7D93A1" }}>{time} Minutes</span></h4>
+                <h4 className='break-time:' style={{ marginLeft: '15px' }}>Break time: <span style={{ color: "#7D93A1" }}>{breakTime} Minutes</span></h4>
+            </div>
 
             <button className='activity-btn' onClick={getToast}>Activity Complete</button>
 

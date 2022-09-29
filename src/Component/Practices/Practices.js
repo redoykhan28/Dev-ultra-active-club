@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { addDb } from '../../Utilities/StorageDb';
+import { addToListDb } from '../../Utilities/StorageDb';
 import Details from '../Details/Details';
 import Info from '../Info/Info';
 import Practice from '../Practice/Practice';
@@ -25,9 +25,8 @@ const Practices = () => {
 
         let newTime = [...practiceTime, practice];
         setPracticeTime(newTime)
+        addToListDb(practice.time)
     }
-
-
     return (
         <div className='main-container'>
 

@@ -21,4 +21,49 @@ let getDb = () => {
 
 }
 
-export { addDb, getDb };
+
+const addToListDb = (id) => {
+
+    // console.log(id)
+
+    let setList = {};
+
+
+    let existList = localStorage.getItem('shopping-cart')
+    if (existList) {
+
+        setList = JSON.parse(existList);
+    }
+
+
+    let value = setList[id];
+    if (value) {
+
+        let newQuantity = value + setList[id];
+        setList[id] = newQuantity;
+    }
+
+    else {
+
+        setList[id] = id;
+    }
+
+    localStorage.setItem('shopping-cart', JSON.stringify(setList))
+
+}
+
+// const getListDb = () => {
+//     let setList = {};
+
+
+//     let existList = localStorage.getItem('shopping-cart')
+//     if (existList) {
+
+//         setList = JSON.parse(existList);
+//     }
+
+//     return setList;
+
+// }
+
+export { addDb, getDb, addToListDb };

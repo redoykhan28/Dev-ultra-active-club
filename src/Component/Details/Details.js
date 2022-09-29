@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { addDb } from '../../Utilities/StorageDb';
+import { addDb, getDb } from '../../Utilities/StorageDb';
 import './Details.css'
 
 const Details = (props) => {
@@ -7,16 +7,20 @@ const Details = (props) => {
     //set state for break
     const [breakTime, setBreakTime] = useState(0)
 
+    //retrieve value from local storage
     useEffect(() => {
 
-        let store = localStorage.getItem('break-time')
-        let storeParse = JSON.parse(store);
-        console.log(storeParse)
+        let getBreak = getDb();
+
+        for (const id in getBreak) {
+
+            setBreakTime(getBreak[id])
+        }
 
     }, [breakTime])
 
     const { practiceTime } = props
-    console.log(props.practice)
+    // console.log(props.practice)
 
     let time = 0
     for (const minute of practiceTime) {

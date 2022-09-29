@@ -8,4 +8,17 @@ let addDb = id => {
     localStorage.setItem('break-time', JSON.stringify(storeBreak));
 }
 
-export { addDb };
+let getDb = () => {
+    let storeBreak = {}
+    let stored = localStorage.getItem('break-time')
+    if (stored) {
+
+        storeBreak = JSON.parse(stored)
+
+    }
+
+    return storeBreak;
+
+}
+
+export { addDb, getDb };
